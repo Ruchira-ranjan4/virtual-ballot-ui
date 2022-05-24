@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard 2</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<style>
+  .sidebar-light-primary {
+
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+
+
+  }
+
+  .nav-sidebar>.nav-item {
+    border-bottom: 1px solid #dee2e6;
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  .election-row-right-border {
+    border-right-color: #cccccc;
+    border-right-width: 1px;
+    border-right-style: solid;
+  }
+
+  .col-top-bottom-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .candidate-offices{
+    overflow-y: scroll;
+  }
+</style>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+    <!-- Navbar -->
+    <div class="row">
+      <div class="col-md-4">
+        <aside class="main-sidebar sidebar-light-primary candidate-offices">
+          <div class="sidebar">
+            <!-- Sidebar user (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+
+              <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                  data-accordion="false">
+                  <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Federal
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="../widgets.html" class="nav-link">
+
+                      <p>
+
+                        US Senator
+
+
+                      </p>
+                    </a>
+                  </li>
+                  <li class="nav-item menu-open">
+                    <a href="#" class="nav-link active">
+
+                      <p>
+                        US Representative
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        State
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        State Senator
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        State Representative
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Judge, Circuit Court
+
+                      </p>
+                    </a>
+
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Judge, Superior Court
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Prosecuting Attorney
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Judge, Small Claims Court
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Local
+
+                      </p>
+                    </a>
+
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Clerk of the Circuit Court
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        County Auditor
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        County Recorder
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        County Treasurer
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        County Sheriff
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-table"></i>
+                      <p>
+                        County Coroner
+                        <i class="fas fa-angle-left right"></i>
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        County Surveyor
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        County Assessor
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        County Commissioner
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        County Council Member
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Township Assessor
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Town Council Member
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Township Board Member
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        City Clerk or Clerk/Treasurer
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        City-County or City Common Council Member
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Major Political Party
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Convention Delegate
+
+                      </p>
+                    </a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+
+                      <p>
+                        Precinct Committeeman
+
+                      </p>
+                    </a>
+
+                  </li>
+
+                </ul>
+              </nav>
+              <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+      </div>
+      <div class="col-md-4">
+        <h4>Map Here</h4>
+      </div>
+      <div class="col-md-4">
+        <h4>Candidates Here</h4>
+      </div>
+    </div>
+
+
+    <!-- /.navbar -->
+  </div>
+ 
+ 
+  </div>
+
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.js"></script>
+
+  <!-- PAGE PLUGINS -->
+  <!-- jQuery Mapael -->
+  <script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+  <script src="plugins/raphael/raphael.min.js"></script>
+  <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+  <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="dist/js/pages/dashboard2.js"></script>
+</body>
+
+</html>
